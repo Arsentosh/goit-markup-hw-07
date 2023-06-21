@@ -21,6 +21,14 @@
     max-width: 400px;
   }
 
+  .address {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
   .our-team > .container {
     max-width: 480px;
   }
@@ -29,6 +37,36 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 107%;
+  }
+
+  .hero {
+    /* background-color: var(--navi-blue-color); */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
   }
 
   .features-list {
@@ -123,6 +161,13 @@
     gap: 24px;
   }
 
+  .footer-form {
+    margin-left: 95px;
+    /* display: flex; */
+    flex-direction: row;
+    width: 100%;
+  }
+
   .footer-form input {
     width: 264px;
   }
@@ -137,6 +182,32 @@
     max-width: 1158px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .hero {
+    /* background-color: var(--navi-blue-color); */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 1440px; */
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
   }
 
   .features-list-item {
