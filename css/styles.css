@@ -110,8 +110,8 @@ a > span {
   width: 100%;
   background-color: #fcfcfc;
   z-index: 1; */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -185,7 +185,7 @@ a > span {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: var(--navi-blue-color);
 }
 .mobile-menu-link:focus {
   color: #404bbf;
@@ -478,8 +478,9 @@ a > span {
 
 .our-team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 72px 24px;
 }
 
@@ -489,7 +490,7 @@ a > span {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  width: 100%;
+  width: 264px;
 }
 
 .our-team-name {
