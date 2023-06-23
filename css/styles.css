@@ -174,7 +174,7 @@ a > span {
   width: 24px;
   height: 24px;
   background: #e7e9fc;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   border: 1px solid #2e2f42;
   border-radius: 50%;
 }
@@ -694,7 +694,8 @@ a > span {
 .footer-links-list {
   display: flex;
   gap: 16px;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* justify-content: center; */
 }
 
 .footer-links-item {
@@ -1022,7 +1023,7 @@ a > span {
 
 .is-hidden {
   visibility: hidden;
-  opacity: 0;
+  /* opacity: 0; */
   pointer-events: none;
 }
 

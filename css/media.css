@@ -16,6 +16,13 @@
   }
 }
 
+@media screen and (max-width: 427px) {
+  .backdrop {
+    width: 95%;
+    padding-top: 55px;
+  }
+}
+
 /* and (min-width: 428px) */
 @media screen {
   .container {
