@@ -158,9 +158,14 @@ a > span {
   position: absolute;
   top: 24px;
   right: 16px;
+  z-index: 1;
 }
 .menu-toggle {
   background-color: transparent;
+  border: none;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .close-menu-btn {
   display: flex;
@@ -689,6 +694,7 @@ a > span {
 .footer-links-list {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
 }
 
 .footer-links-item {
