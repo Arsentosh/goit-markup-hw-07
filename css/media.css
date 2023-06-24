@@ -21,6 +21,24 @@
     width: 95%;
     padding-top: 55px;
   }
+
+  .modal {
+    position: absolute;
+    padding: 72px 24px 24px 24px;
+    width: 95%;
+    max-height: 95%;
+    left: 50%;
+    top: 16px;
+    transform: translate(-50%) scale(1);
+    transition: transform 250ms linear;
+    /* DAIRY */
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
+  }
 }
 
 /* and (min-width: 428px) */
@@ -46,13 +64,61 @@
   .container {
     max-width: 736px;
   }
+  /* 
+  .header-container {
+    margin-left: 120px;
+  } */
 
   .nav-list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .nav-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%; /* 24/16 */
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    display: flex;
+    padding: 24px 0;
+    position: relative;
+    color: var(--navi-blue-color);
+    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-item-link.current {
+    color: #404bbf;
+  }
+
+  .nav-item-link.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+
+  .nav-item-link:hover {
+    color: var(--btn-color);
+  }
+
+  .nav-item-link:focus {
+    color: var(--btn-color);
   }
 
   .address {
+    font-style: normal;
+    margin-left: auto;
     display: flex;
   }
 
@@ -61,7 +127,30 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin-left: 120px;
+  }
+
+  .address-link {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5em;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    /* padding: 24px 0; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover {
+    color: var(--btn-color);
+  }
+
+  .address-link:focus {
+    color: var(--btn-color);
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
   }
 
   .menu-toggle {
@@ -71,6 +160,11 @@
   .hero-title {
     font-size: 56px;
     line-height: 107%;
+  }
+
+  .section.hero {
+    padding: 112px 0;
+    margin: 0 auto;
   }
 
   .hero {
@@ -105,6 +199,18 @@
     gap: 72px 24px;
   }
 
+  .feature-name {
+    display: flex;
+    font-size: 36px;
+    justify-content: start;
+    font-weight: 700;
+    line-height: 1.1em;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    margin-bottom: 8px;
+  }
+
   .features-list-item {
     gap: 24px;
     width: calc((100% - 24px) / 2);
@@ -120,9 +226,9 @@
     flex-direction: row;
   }
 
-  .our-team-item {
+  /* .our-team-item {
     width: calc((100% - 40px) / 2);
-  }
+  } */
 
   .container-customers {
     max-width: 582px;
@@ -148,6 +254,7 @@
     align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 582px;
   }
 
   .logo-footer {
@@ -190,10 +297,6 @@
     gap: 24px;
   }
 
-  .footer-container {
-    width: 582px;
-  }
-
   .footer-form {
     /* display: flex; */
     flex-direction: row;
@@ -228,6 +331,11 @@
     gap: 40px;
   }
 
+  .address-link {
+    font-style: normal;
+    font-size: 16px;
+  }
+
   .hero {
     /* background-color: var(--navi-blue-color); */
     background-image: linear-gradient(
@@ -250,7 +358,7 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-bg-tab-2x.jpg);
+        url(../images/people-office-2x.jpg);
     }
   }
 
@@ -260,12 +368,24 @@
   }
 
   .feature-name {
-    font-weight: 700;
+    display: flex;
+    font-size: 20px;
+    justify-content: start;
+    font-weight: 500;
     line-height: 1.1em;
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
     color: var(--navi-blue-color);
     margin-bottom: 8px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    /* or 150% */
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
   }
 
   .our-team > .container {

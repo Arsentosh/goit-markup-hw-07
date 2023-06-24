@@ -150,17 +150,47 @@
           <h2 class="eg-title">What are we doing</h2>
           <ul class="eg-list list">
             <li class="eg-item">
-              <img src="./images/pc.jpg" alt="pc" width="360" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Mark-Guerrero-2x.jpg 2x,
+                    ./images/Tom-Ford-2x.jpg      2x,
+                    ./images/Camila-Garcia-2x.jpg 2x,
+                    ./images/Daniel-Wilson-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pc-2x.jpg          2x,
+                    ./images/whatsup-2x.jpg     2x                    2x,
+                    ./images/smartphone-2x.jpg  2x,
+                  "
+                  media="(min-width: 1158px)"
+                />
+              </picture>
+              <img
+                srcset="./images/pc-2x.jpg 2x"
+                src="./images/pc.jpg"
+                alt="pc"
+                width="360"
+              />
             </li>
             <li class="eg-item">
               <img
+                srcset="./images/whatsup-2x.jpg"
                 src="./images/whatsup.jpg"
                 alt="app on the phone"
                 width="360"
               />
             </li>
             <li class="eg-item">
-              <img src="./images/smartphone.jpg" alt="smartphone" width="360" />
+              <img
+                srcset="./images/smartphone-2x.jpg"
+                src="./images/smartphone.jpg"
+                alt="smartphone"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -616,7 +646,9 @@
 
       <ul class="mobile-menu list">
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+          <a class="mobile-menu-link current link" href="./index.html"
+            >Studio</a
+          >
         </li>
         <li class="mobile-menu-item">
           <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
