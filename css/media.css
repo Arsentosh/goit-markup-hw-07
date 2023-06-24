@@ -18,15 +18,16 @@
 
 @media screen and (max-width: 427px) {
   .backdrop {
-    width: 95%;
+    /* width: 95%; */
     padding-top: 55px;
+    overflow-y: auto;
   }
 
   .modal {
     position: absolute;
-    padding: 72px 24px 24px 24px;
+    padding: 96px 24px 24px 24px;
     width: 95%;
-    max-height: 95%;
+    min-height: 584px;
     left: 50%;
     top: 16px;
     transform: translate(-50%) scale(1);
