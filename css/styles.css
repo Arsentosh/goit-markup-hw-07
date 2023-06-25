@@ -804,6 +804,8 @@ a > span {
 
 .btns-list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -812,13 +814,14 @@ a > span {
 
 .images-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .image-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
   position: relative;
 }
 
