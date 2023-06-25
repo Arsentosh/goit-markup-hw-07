@@ -925,8 +925,8 @@ a > span {
   width: 95%;
   min-height: 584px;
   left: 50%;
-  top: 20px;
-  transform: translate(-50%) scale(1);
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
   /* DAIRY */
   background: #fcfcfc;
